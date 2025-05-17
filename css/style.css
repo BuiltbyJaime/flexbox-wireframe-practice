@@ -1,75 +1,71 @@
+
 .flex-container {
     display: flex;
     flex-direction: column;
     background-color: #b1b5be;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
-  }
-  
-  .header{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top:50px;
-    margin-bottom:5px;
-    max-width: 600px;
-    box-sizing: border-box;
+}
+.flex-items {
+    border:2px solid #000000;
     border-radius: 10px;
     text-align: center;
-    color: white;
-    padding: 15px;
+    color:white;
+    padding: 1em;
+    margin:10px;
+
+
+
+}
+  .header {
     background-color: #a22064;
+  
   }
-  .article {
-    max-width: 600px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    padding: 15px;
-    min-height: 30vh;
-    margin-right:20px;
-    margin-left:20px;
-    background-color: #16b781dd;
+  .articles {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top:20px;
+    text-align: center;
+    color: white;
+    background-color: #16b781dd;
   }
 
   
   .inner {
+ 
     background-color: #e51759;
-    padding: 15px;
-    max-width: 400px;
-    width: 90%;
-    border-radius: 10px;
+    
+
+
+
   }
 
   .aside {
-    max-width: 600px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    padding: 15px;
-    margin-top:5px ;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     background-color: #00558c;
+    
+
   }
  
   
   .footer {
-    max-width: 600px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    padding: 15px;
-    margin-top:5px ;
-    margin-left: 20px;
-    margin-right: 20px;
+   
     background-color: #e86b29;
+    
   }
-  
+
+  @media screen and (min-width:700px) {
+
+.flex-container2 {
+  display: flex;
+}
+.articles {
+order: 1;
+flex:3;
+
+
+}
+.aside {
+flex:1;
+align-content: center;
+
+}
+}
